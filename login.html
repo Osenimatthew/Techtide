@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="icon" href="images/musiclogo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script type="module" src="login.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login_container">
+        <h1>Login</h1>
+        <div class="input-group">
+          <input type="text" id="Email" required />
+          <label for="Email">Email</label>
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-group">
+          <input type="password" id="Password" required />
+          <label class="password" for="Password">Password</label>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="remember">
+          <label for="Remember me"
+            ><input type="checkbox" name="Remember me" id="Remember" />Remember
+            me</label
+          >
+          <a href="/" id="reset">forgot your Password?</a>
+        </div>
+        <div class="btn-container">
+          <button type="submit" id="submit" class="btn">Sign in now</button>
+        </div>
+        <p class="text">Or signin with</p>
+        <div class="others">
+          <a id="googlesignin" href="#"><i class="bx bxl-google"></i></a>
+          <a id="facebooksignin" href="#"><i class="bx bxl-facebook"></i></a>
+        </div>
+        <div class="signup">
+          <p class="signup">
+            Don't have an account? <a href="signup.html">Signup here</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
+
