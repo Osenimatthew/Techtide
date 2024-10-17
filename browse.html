@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techtunes</title>
+    <link rel="stylesheet" href="browse.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="icon" href="images/logo.jpg" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo">
+        <a href="index.html"><i class="bx bxs-music"></i>Techtunes</a>
+      </div>
+      <div class="navbar_toggle" id="mobile_menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav_links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a id="hide-browse" href="browse.html">Browse</a></li>
+          <li><a id="hide-playlist" href="playlist.html">Playlist</a></li>
+          <li><a id="logout" class="btn">Logout</a></li>
+          <li><a id="login" class="btn" href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-content">
+      <div class="search">
+        <input
+          type="text"
+          name="search"
+          id="search-input"
+          placeholder="Search for a song ..."
+        />
+        <button onclick="searchMusic()">Search</button>
+      </div>
+
+      <!-- Search results container -->
+      <div id="search-results"></div>
+      <audio id="audio-player" controls></audio>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Techtunes. All Rights Reserved.</p>
+    </footer>
+    <script type="module" src="script.js" defer></script>
+    <script type="module" src="login.js" defer></script>
+  </body>
+</html>
+
