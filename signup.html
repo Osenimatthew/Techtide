@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup page</title>
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="icon" href="images/musiclogo.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script type="module" src="signup.js"></script>
+  </head>
+  <body>
+    <form class="container" action="" id="signup-form">
+      <div class="login_container">
+        <h1>Signup</h1>
+        <div class="input-group">
+          <input type="text" id="Email" required />
+          <label for="Email">Email</label>
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-group">
+          <input type="text" id="Email" required />
+          <label class="username" for="Username">Username</label>
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-group">
+          <input type="password" id="Password" required />
+          <label class="password" for="Password">Password</label>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="btn-container">
+          <button type="submit" id="submit" class="btn">Sign in now</button>
+        </div>
+        <p class="text">Or signup with</p>
+        <div class="others">
+          <a id="googlesignup" href="#"><i class="bx bxl-google"></i></a>
+          <a id="facebooksignup" href="#"><i class="bx bxl-facebook"></i></a>
+        </div>
+        <div class="signup">
+          <p class="signup">
+            Already have an account? <a href="login.html">Login here</a>
+          </p>
+        </div>
+      </div>
+    </form>
+    <script src="signup.js"></script>
+  </body>
+</html>
